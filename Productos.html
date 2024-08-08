@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NabloStore</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: black;
+        }
+        header h1 a{
+            text-decoration: none;
+            color: inherit;
+        }
+        h1 {
+            text-align: center;
+            color: #ffffff;
+        }
+        h2{
+            color: #ffffff;
+            font-size: 50px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        nav {
+            background-color: #333;
+            color: white;
+            padding: 1em;
+            display: flex;
+            align-items: center;
+        }
+        nav img {
+            height: 200px;
+            margin-right: 1em;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            margin: 40px;
+        }
+        nav ul li {
+            margin-right: 8em;
+        }
+        nav ul li a {
+            color: rgb(119, 15, 205);
+            text-decoration: none;
+            font-size: 30px;
+        }
+        main {
+            padding: 1em;
+        }
+        p{
+            color: #ffffff;
+            font-size: 40px;
+        }
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1em;
+        }
+        .product {
+            text-align: center;
+            border: 1px solid #ccc;
+            padding: 1em;
+        }
+        .product img {
+            max-width: 100%;
+            height: auto;
+        }
+        .product-info {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 0.5em;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1em;
+            position: fixed;
+            width: 97.5%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1><a href="Index.html">NabloStore</a></h1>
+    </header>
+    <nav>
+        <img src="logo.jpg" alt="logo">
+        <ul>
+            <li style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;"><a href="Index.html">Inicio</a></li>
+            <li style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;"><a href="SobreNosotros.html">Sobre Nosotros</a></li>
+            <li style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;"><a href="Productos.html">Productos</a></li>
+            <li style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;"><a href="Contactanos.html">Contactanos</a></li>
+            <li style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;"><a href="Ingreso.html">Ingreso</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="Productos">
+            <h2>Productos</h2>
+            <div class="grid-container">
+                <div class="product">
+                    <img src="Alfombrilla.jpg" alt="Alfombrilla" style="height: 300px;">
+                    <div class="product-info">
+                        <p>50.000$</p>
+                        <p style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">Alfombrilla</p>
+                        <button id="comprar">Comprar</button>
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="Mouse.webp" alt="Mouse" style="height: 300px;">
+                    <div class="product-info">
+                        <p>100.000$</p>
+                        <p style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">Mouse</p>
+                        <button id="comprar">Comprar</button>
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="Teclado.jpg" alt="Teclado" style="height: 300px;">
+                    <div class="product-info">
+                        <p>160.000$</p>
+                        <p style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">Teclado</p>
+                        <button id="comprar">Comprar</button>
+                    </div>
+                </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Nablostore. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
